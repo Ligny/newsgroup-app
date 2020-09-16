@@ -1,6 +1,8 @@
 import React from 'react';
-
 import ReactEmoji from 'react-emoji';
+import cx from 'classnames';
+
+import './message.css';
 
 const Message = ({
   message: { text, user },
@@ -14,12 +16,17 @@ const Message = ({
     isSentByCurrentUser = true;
   }
 
+  const colorUser = cx({
+    'currentUser': isSentByCurrentUser === true,
+    'otherUser': isSentByCurrentUser === false,
+  })
+
   return (
-    <div>
-      <div>
-        <p>{ReactEmoji.emojify(text)}</p>
+    <div className={`messageContain ${colorUser}`}>
+      <div className={'messageBox'}>
+        <p className={'messageText'}>{ReactEmoji.emojify(text)}</p>
       </div>
-       <p>{user}</p>
+       <p className={'userText'}>{user}</p>
     </div>
   );
 }

@@ -1,0 +1,40 @@
+.messageContain {
+  display: flex;
+  padding: 0 5%;
+  margin-top: 3px;
+}
+
+.messageBox {
+  justify-content: flex-end;
+  border-radius: 20px;
+  padding: 5px 20px;
+  color: white;
+  display: inline-block;
+  max-width: 80%;
+}
+
+.currentUser {
+  background: #00cc66;
+}
+
+.otherUser {
+  flex-direction: row-reverse;
+  background: #454a4e;
+}
+
+.messageText {
+  width: 100%;
+  letter-spacing: 0;
+  float: left;
+  font-size: 1.1em;
+  word-wrap: break-word;
+}
+
+.userText {
+  display: flex;
+  font-size: smaller;
+  align-items: center;
+  color: #828282;
+  letter-spacing: 0.3px;
+  padding-left: 10px;
+}

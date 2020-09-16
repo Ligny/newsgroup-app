@@ -1,0 +1,17 @@
+.outContainRoom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #23272a;
+}
+
+.inContainRoom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #2c2f33;
+  border-radius: 8px;
+  height: 100%;
+  width: 60%;
+}

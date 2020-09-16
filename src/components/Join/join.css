@@ -1,0 +1,61 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.outContain{
+  display: flex;
+  position: relative;
+  background-color: #23272a;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.pName {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  display: flex;
+  text-align: center;
+  color: #00cc66;
+}
+
+.header {
+  color: #00cc66;
+  font-size: 2.5em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #00cc66;
+}
+
+.joinInput {
+  border-radius: 0;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.signButton {
+  color: white !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #00cc66;
+  padding: 15px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  width: 100%;
+}
+
+.space {
+  margin-top: 20px;
+}
+
+.signButton,
+.joinInput:focus {
+  outline: none;
+}
