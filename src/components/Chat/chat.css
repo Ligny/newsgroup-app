@@ -1,12 +1,4 @@
-.outContainRoom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #23272a;
-}
-
-.inContainRoom {
+.middleContainRoom {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
